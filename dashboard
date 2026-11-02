@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Campus Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>🎓 Campus Study Hub</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+
+    <!-- Dashboard Heading -->
+    <section class="hero">
+
+        <h1>Welcome to Your Study Hub 📚</h1>
+
+        <p id="student-selection">
+            Your selected Branch, Year and Semester will appear here.
+        </p>
+
+    </section>
+
+
+    <!-- Dashboard Options -->
+    <section class="selection-section">
+
+        <div class="selection-box dashboard-box">
+
+            <h2>What are you looking for? 🔍</h2>
+
+            <div class="dashboard-options">
+
+                <a href="#" class="dashboard-card">
+                    📚
+                    <h3>Notes</h3>
+                    <p>Study notes and important topics</p>
+                </a>
+
+
+                <a href="#" class="dashboard-card">
+                    📄
+                    <h3>PYQs</h3>
+                    <p>Previous year question papers</p>
+                </a>
+
+
+                <a href="#" class="dashboard-card">
+                    📝
+                    <h3>CT Papers</h3>
+                    <p>Previous class test papers</p>
+                </a>
+
+
+                <a href="senior-advice.html" class="dashboard-card">
+                    ⭐
+                    <h3>Senior Advice</h3>
+                    <p>Learn from your seniors' experiences</p>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Campus Study Hub 🎓</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
