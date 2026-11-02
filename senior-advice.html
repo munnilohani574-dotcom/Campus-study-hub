@@ -1,0 +1,109 @@
+
+function showAdvice(subject) {
+
+    const result = document.getElementById("advice-result");
+
+    const advice = {
+
+        DSA: {
+            name: "Data Structures",
+            difficulty: "⭐⭐⭐⭐☆ Moderate to Challenging",
+            resources: "Focus on a beginner-friendly playlist and practice coding regularly.",
+            topics: "Arrays, Linked Lists, Stacks, Queues, Trees and Graphs.",
+            strategy: "First understand concepts, then write code yourself and practice questions.",
+            mistakes: "Do not memorize programs without understanding the logic.",
+            exam: "Practice PYQs and revise important definitions and algorithms.",
+            personal: "Start early and practice consistently. Don't wait until exams!"
+        },
+
+        OOP: {
+            name: "Object Oriented Programming",
+            difficulty: "⭐⭐⭐☆☆ Moderate",
+            resources: "Learn concepts with examples and practice writing C++ programs.",
+            topics: "Classes, Objects, Constructors, Inheritance and Polymorphism.",
+            strategy: "Understand every concept and write small programs yourself.",
+            mistakes: "Don't only memorize definitions—understand the code.",
+            exam: "Focus on important concepts, syntax and programming questions.",
+            personal: "Practice inheritance and polymorphism properly."
+        },
+
+        DM: {
+            name: "Discrete Mathematics",
+            difficulty: "⭐⭐⭐⭐☆ Challenging",
+            resources: "Use lectures and solve plenty of numerical problems.",
+            topics: "Logic, Relations, Functions, Graph Theory and Combinatorics.",
+            strategy: "Practice regularly instead of studying everything at the end.",
+            mistakes: "Don't skip numerical practice.",
+            exam: "Practice PYQs and understand the formulas and concepts.",
+            personal: "Focus on weak topics early because they can take time."
+        },
+
+        COA: {
+            name: "Computer Organization",
+            difficulty: "⭐⭐⭐☆☆ Moderate",
+            resources: "Understand concepts visually and use diagrams.",
+            topics: "CPU, Memory, Instructions and Computer Architecture.",
+            strategy: "Understand the flow of operations instead of memorizing everything.",
+            mistakes: "Don't ignore diagrams and numerical questions.",
+            exam: "Practice diagrams and repeated PYQ topics.",
+            personal: "Make short notes for revision."
+        }
+
+    };
+
+
+    const data = advice[subject];
+
+
+    result.innerHTML = `
+
+        <div class="advice-box">
+
+            <h1>⭐ ${data.name} — Senior Guide</h1>
+
+
+            <div class="advice-section">
+                <h3>🎯 Difficulty Level</h3>
+                <p>${data.difficulty}</p>
+            </div>
+
+
+            <div class="advice-section">
+                <h3>📺 Best Resources</h3>
+                <p>${data.resources}</p>
+            </div>
+
+
+            <div class="advice-section">
+                <h3>🔥 Important Topics</h3>
+                <p>${data.topics}</p>
+            </div>
+
+
+            <div class="advice-section">
+                <h3>📚 Study Strategy</h3>
+                <p>${data.strategy}</p>
+            </div>
+
+
+            <div class="advice-section">
+                <h3>⚠️ Common Mistakes</h3>
+                <p>${data.mistakes}</p>
+            </div>
+
+
+            <div class="advice-section">
+                <h3>📝 Exam Strategy</h3>
+                <p>${data.exam}</p>
+            </div>
+
+
+            <div class="advice-section">
+                <h3>💡 Senior's Personal Advice</h3>
+                <p>${data.personal}</p>
+            </div>
+
+        </div>
+    `;
+
+}
